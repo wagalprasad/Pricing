@@ -1,3 +1,3 @@
-## Documentation
+## Tests
 
-Please put your documentation in this file.
+Please put your tests in this directory.
