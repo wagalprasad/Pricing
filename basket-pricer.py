@@ -3,8 +3,8 @@ import pandas as pd
 class Cart:
     def getDetails(self):
         """function to read input data"""
-        item = pd.read_csv('C://Users/vivek kishore/Desktop/data.csv')
-        basket = pd.read_csv('C://Users/vivek kishore/Desktop/basket.csv')
+        item = pd.read_csv('data.csv')
+        basket = pd.read_csv('basket.csv')
         # join item and basket data
         item_basket =item.set_index('Item').join(basket.set_index('Item'))
         item_basket = item_basket.sort_values(by=['basket'])
